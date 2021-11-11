@@ -94,5 +94,3 @@
 拉取成功后，输入docker images，会看到下载的镜像名，说明下载镜像成功：  
 
 <img src="./images/test2.png" width = "600" height = "300" alt="测试图" align=center />
-
-
