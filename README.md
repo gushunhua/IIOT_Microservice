@@ -84,7 +84,7 @@
 
 
 ### 使用方法
-服务的拉取测试方法如下：  
+服务的拉取方法如下：  
 在一台装有docker的linux机器上，对镜像进行拉取测试。  
 输入命令: docker pull registry.cn-hangzhou.aliyuncs.com/flowertree/{镜像名字}  
 例如：docker pull registry.cn-hangzhou.aliyuncs.com/flowertree/data-save，有些镜像达到几个G，下载需要一段时间。如果下载失败，再次运行上述命令，重新下载即可。 
