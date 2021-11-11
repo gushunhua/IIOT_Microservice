@@ -4,13 +4,13 @@
 
 ### 服务介绍
 
-本课题构建出一套面向工业生产应用的标准化服务，主要体现在两个方面，**其一，全部微服务均面向工业生产**，由不同场景的工业互联网服务组建而成。对于生产层面，订单面临着工序的拆解和重新分配，由此产生工序调度的服务。对于辅助运行的层面，衍生出安全帽检测、生产要素预测等一系列计算服务。对于设备控制层面，我们使用资源池、设备孪生相关服务提升对资源的管理能力。因此，该微服务集合中主要从工业生产中的传输、计算和控制三个维度进行服务功能的设计，并使用Docker进行封装，具体分为数据处理类、算法策略类、虚拟资源池类和基础数据管理类四个大类，每类服务又分为若干小类，如下图所示：
+本课题构建出一套面向工业生产应用的标准化服务，主要体现在两个方面，其一，全部微服务均面向工业生产，由不同场景的工业互联网服务组建而成。对于生产层面，订单面临着工序的拆解和重新分配，由此产生工序调度的服务。对于辅助运行的层面，衍生出安全帽检测、生产要素预测等一系列计算服务。对于设备控制层面，我们使用资源池、设备孪生相关服务提升对资源的管理能力。因此，该微服务集合中主要从工业生产中的传输、计算和控制三个维度进行服务功能的设计，并使用Docker进行封装，具体分为数据处理类、算法策略类、虚拟资源池类和基础数据管理类四个大类，每类服务又分为若干小类，如下图所示：
 
-![图片描述](./assets/images/index/markdown.png)
+<img src="./images/classification.jpg" width = "600" height = "400" alt="微服务分类" align=center />
 
 其二，服务镜像均上传至阿里云的镜像仓库并开源，开源仓库的地址为“registry.cn-hangzhou.aliyuncs.com/flowertree/”，开源服务镜像示例如下图所示：
 
-![图片描述](./assets/images/index/markdown.png)
+<img src="./images/aliyun.png" width = "600" height = "400" alt="阿里云镜像" align=center />
 
 全部微服务和对应的镜像名称如下表所示：
 
@@ -84,10 +84,13 @@
 
 
 ### 使用方法
-服务的拉取测试方法如下：
-在一台装有docker的linux机器上，对镜像进行拉取测试。
-输入命令: docker pull registry.cn-hangzhou.aliyuncs.com/flowertree/{镜像名字}
-例如：docker pull registry.cn-hangzhou.aliyuncs.com/flowertree/data-save，有些镜像达到几个G，下载需要一段时间。如果下载失败，再次运行上述命令，重新下载即可。
-![图片描述](./assets/images/index/markdown.png)
-拉取成功后，输入docker images，会看到下载的镜像名，说明下载镜像成功。
-![图片描述](./assets/images/index/markdown.png)
+服务的拉取测试方法如下：  
+在一台装有docker的linux机器上，对镜像进行拉取测试。  
+输入命令: docker pull registry.cn-hangzhou.aliyuncs.com/flowertree/{镜像名字}  
+例如：docker pull registry.cn-hangzhou.aliyuncs.com/flowertree/data-save，有些镜像达到几个G，下载需要一段时间。如果下载失败，再次运行上述命令，重新下载即可。 
+
+<img src="./images/test1.png" width = "600" height = "300" alt="测试图" align=center />
+
+拉取成功后，输入docker images，会看到下载的镜像名，说明下载镜像成功：  
+
+<img src="./images/test2.png" width = "600" height = "300" alt="测试图" align=center />
